@@ -62,6 +62,9 @@ exit.addEventListener("click",()=>{
   inBox.innerHTML="";
     
  })
-getApi(ghilbli)
+ window.onload=()=>{
+     getApi(ghilbli)
 .then(res=>getMovies(res,holder))
+ }
+
 // .then(res=>console.log(res)) 
